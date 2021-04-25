@@ -1,0 +1,16 @@
+{
+    "name": "E14B",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OS-Q/E14B.git"
+    },
+    "license": "MIT",
+    "platforms": "ststm8",
+    "frameworks": "*",
+    "build": {
+        "flags": [
+            "-I include/"
+        ]
+    }
+}

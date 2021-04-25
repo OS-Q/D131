@@ -3,3 +3,23 @@
 __pycache__/
 .vscode/
 .pio/
+*.rst
+**/*/README*
+LICENSE*
+settings
+*.png
+*.jpg
+# examples/**/*.yml
+# examples/**/*.md
+# **/CONTR*
+# **/CHANGE*
+STM8A*
+STM8L*
+STM8T*
+STLUX*
+STNRG*
+STWBC*
+*.dep
+*.log
+*.ewt
+*.ewd
