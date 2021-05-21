@@ -1,12 +1,11 @@
 {
-    "name": "E14B",
+    "name": "D131",
     "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": "https://github.com/OS-Q/E14B.git"
+        "url": "https://github.com/OS-Q/D131.git"
     },
-    "license": "MIT",
-    "platforms": "ststm8",
+    "platforms": "P131",
     "frameworks": "*",
     "build": {
         "flags": [
