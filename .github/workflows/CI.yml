@@ -81,7 +81,6 @@ jobs:
           - "serial_write"
           - "Single-Wire_DS18B20"
           - "SPI_LED_MAX7219"
-          - "STM8_StdPeriphLib"
           - "Task_Scheduler"
 
     runs-on: ubuntu-latest

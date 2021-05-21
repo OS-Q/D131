@@ -1,8 +1,8 @@
 /**
   \file config.h
-   
+
   \brief set project configurations
-   
+
   set project configurations like used device or board etc.
 */
 
@@ -16,8 +16,8 @@
 /*----------------------------------------------------------
     SELECT BOARD
 ----------------------------------------------------------*/
-#define STM8L_DISCOVERY
-//#define SDUINO
+// #define STM8L_DISCOVERY
+#define SDUINO
 
 
 /*----------------------------------------------------------
