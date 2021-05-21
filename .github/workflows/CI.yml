@@ -49,6 +49,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        chips:
+          - "stm8s105c6"
         items:
           - "adc_continuous_1ch"
           - "calculate_CRC"
@@ -72,7 +74,8 @@ jobs:
         if: success()
         working-directory: examples
         run: |
-          make
+          make -C ${{ matrix.items }}
+
 
       # - uses: actions/upload-artifact@v2
       #   if: success()
