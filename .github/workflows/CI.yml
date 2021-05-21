@@ -49,8 +49,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        chips:
-          - "stm8s105c6"
         items:
           - "adc_continuous_1ch"
           - "adc_single-shot_1ch"
