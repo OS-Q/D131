@@ -53,10 +53,40 @@ jobs:
           - "stm8s105c6"
         items:
           - "adc_continuous_1ch"
+          - "adc_single-shot_1ch"
+          - "adc1_scan"
+          - "beeper"
+          - "blink_interrupt"
+          - "blink_noInterrupt"
           - "calculate_CRC"
+          - "CLI_console"
+          - "clock_switch"
+          - "I2C_LCD"
+          - "low-power_auto-wake"
           - "IWDG_watchdog"
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+          - "millis_delay"
+          - "clock_switch"
+          - "Modbus_RTU"
+          - "Modbus_RTU_auto-address"
+          - "pin_interrupt"
+          - "pin_read_write"
+          - "port_interrupt"
+          - "PWM_2ch_phase-shift"
+          - "PWM_generate"
+          - "read_unique_ID"
+          - "read_write_D-flash"
+          - "read_write_option_bytes"
+          - "read_write_P-flash"
+          - "serial_gets_printf"
+          - "serial_printf"
+          - "serial_printf_FIFO_interrupt"
+          - "serial_write"
+          - "Single-Wire_DS18B20"
+          - "SPI_LED_MAX7219"
+          - "STM8_StdPeriphLib"
+          - "Task_Scheduler"
+
+    runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v2
@@ -77,9 +107,9 @@ jobs:
           make -C ${{ matrix.items }}
 
 
-      # - uses: actions/upload-artifact@v2
-      #   if: success()
-      #   with:
-      #     name: N76E003
-      #     path: examples/build
+      - uses: actions/upload-artifact@v2
+        if: success()
+        with:
+          name: D131_${{ matrix.items }}
+          path: examples/${{ matrix.items }}
 
